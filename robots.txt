@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /test.*
+Disallow: /server.*
+
+Sitemap: https://cristianporco.it/app/convertitore-di-disegni-ascii-art-in-immagini-png/sitemap.xml
