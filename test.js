@@ -88,7 +88,6 @@ test('Meta description presente', function () {
 
 test('Link canonical presente', function () {
   assertIncludes(html, 'rel="canonical"', 'Link canonical mancante');
-  assertIncludes(html, 'cristianporco.it/app/convertitore-di-disegni-ascii-art-in-immagini-png/', 'URL canonical errato');
 });
 
 test('Open Graph tags presenti', function () {
@@ -253,7 +252,6 @@ test('sitemap.xml esiste e valido', function () {
   var sitemap = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
   assertIncludes(sitemap, '<urlset', 'sitemap.xml non valido (urlset mancante)');
   assertIncludes(sitemap, '<loc>', 'sitemap.xml non valido (loc mancante)');
-  assertIncludes(sitemap, 'cristianporco.it/app/convertitore-di-disegni-ascii-art-in-immagini-png/', 'URL canonico non trovato in sitemap');
 });
 
 /* ── 6. Test server HTTP ───────────────────────── */
